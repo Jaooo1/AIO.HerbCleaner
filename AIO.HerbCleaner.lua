@@ -1,5 +1,6 @@
 --- Start at Fort Bank ---
 --- Have Grimy herb on inv ---
+--- Version 1.0 ---
 local API = require("api")
 local afk = os.time()
 API.SetDrawTrackedSkills(true)
@@ -9,6 +10,7 @@ API.Write_fake_mouse_do(false)
 
 
 local grimy_ids = {
+    37975, -- GRIMY_BLOODWEED
     21626, -- GRIMY_FELLSTALK
     3049,  -- GRIMY_TOADFLAX
     2485,  -- GRIMY_LANTADYME
@@ -26,6 +28,7 @@ local grimy_ids = {
     215,   -- GRIMY_CADANTINE
     217,   -- GRIMY_DWARF_WEED
     219    -- GRIMY_TORSTOL
+   
 }
 
 local function idleCheck()
